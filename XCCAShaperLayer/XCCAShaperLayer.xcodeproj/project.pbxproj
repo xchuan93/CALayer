@@ -15,6 +15,9 @@
 		5B04D485225AF28F0052EDA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D484225AF28F0052EDA0 /* main.m */; };
 		5B04D48F225AF28F0052EDA0 /* XCCAShaperLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D48E225AF28F0052EDA0 /* XCCAShaperLayerTests.m */; };
 		5B04D49A225AF28F0052EDA0 /* XCCAShaperLayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D499225AF28F0052EDA0 /* XCCAShaperLayerUITests.m */; };
+		5B04D4A9225AF3660052EDA0 /* RoundProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D4A8225AF3660052EDA0 /* RoundProgressController.m */; };
+		5B04D4AC225B22E00052EDA0 /* RectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D4AB225B22E00052EDA0 /* RectController.m */; };
+		5B04D4AF225B2DEC0052EDA0 /* BrokenLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D4AE225B2DEC0052EDA0 /* BrokenLineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		5B04D495225AF28F0052EDA0 /* XCCAShaperLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCCAShaperLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B04D499225AF28F0052EDA0 /* XCCAShaperLayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCCAShaperLayerUITests.m; sourceTree = "<group>"; };
 		5B04D49B225AF28F0052EDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B04D4A7225AF3660052EDA0 /* RoundProgressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundProgressController.h; sourceTree = "<group>"; };
+		5B04D4A8225AF3660052EDA0 /* RoundProgressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundProgressController.m; sourceTree = "<group>"; };
+		5B04D4AA225B22E00052EDA0 /* RectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectController.h; sourceTree = "<group>"; };
+		5B04D4AB225B22E00052EDA0 /* RectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectController.m; sourceTree = "<group>"; };
+		5B04D4AD225B2DEC0052EDA0 /* BrokenLineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrokenLineController.h; sourceTree = "<group>"; };
+		5B04D4AE225B2DEC0052EDA0 /* BrokenLineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrokenLineController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				5B04D476225AF28D0052EDA0 /* AppDelegate.m */,
 				5B04D478225AF28D0052EDA0 /* ViewController.h */,
 				5B04D479225AF28D0052EDA0 /* ViewController.m */,
+				5B04D4A7225AF3660052EDA0 /* RoundProgressController.h */,
+				5B04D4A8225AF3660052EDA0 /* RoundProgressController.m */,
+				5B04D4AA225B22E00052EDA0 /* RectController.h */,
+				5B04D4AB225B22E00052EDA0 /* RectController.m */,
+				5B04D4AD225B2DEC0052EDA0 /* BrokenLineController.h */,
+				5B04D4AE225B2DEC0052EDA0 /* BrokenLineController.m */,
 				5B04D47B225AF28D0052EDA0 /* Main.storyboard */,
 				5B04D47E225AF28F0052EDA0 /* Assets.xcassets */,
 				5B04D480225AF28F0052EDA0 /* LaunchScreen.storyboard */,
@@ -262,7 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B04D4AF225B2DEC0052EDA0 /* BrokenLineController.m in Sources */,
 				5B04D47A225AF28D0052EDA0 /* ViewController.m in Sources */,
+				5B04D4AC225B22E00052EDA0 /* RectController.m in Sources */,
+				5B04D4A9225AF3660052EDA0 /* RoundProgressController.m in Sources */,
 				5B04D485225AF28F0052EDA0 /* main.m in Sources */,
 				5B04D477225AF28D0052EDA0 /* AppDelegate.m in Sources */,
 			);
@@ -436,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3M45J7VXHD;
 				INFOPLIST_FILE = XCCAShaperLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3M45J7VXHD;
 				INFOPLIST_FILE = XCCAShaperLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
