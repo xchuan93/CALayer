@@ -18,6 +18,9 @@
 		5B04D4A9225AF3660052EDA0 /* RoundProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D4A8225AF3660052EDA0 /* RoundProgressController.m */; };
 		5B04D4AC225B22E00052EDA0 /* RectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D4AB225B22E00052EDA0 /* RectController.m */; };
 		5B04D4AF225B2DEC0052EDA0 /* BrokenLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04D4AE225B2DEC0052EDA0 /* BrokenLineController.m */; };
+		5B5892B4225D8AEF00AA76DD /* DottedLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5892B3225D8AEF00AA76DD /* DottedLineViewController.m */; };
+		5B5892BE225D977800AA76DD /* yuanxing.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5892BD225D977800AA76DD /* yuanxing.png */; };
+		5B5892C8225D991000AA76DD /* changtiao-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5892C7225D991000AA76DD /* changtiao-4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,10 @@
 		5B04D4AB225B22E00052EDA0 /* RectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectController.m; sourceTree = "<group>"; };
 		5B04D4AD225B2DEC0052EDA0 /* BrokenLineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrokenLineController.h; sourceTree = "<group>"; };
 		5B04D4AE225B2DEC0052EDA0 /* BrokenLineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrokenLineController.m; sourceTree = "<group>"; };
+		5B5892B2225D8AEF00AA76DD /* DottedLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DottedLineViewController.h; sourceTree = "<group>"; };
+		5B5892B3225D8AEF00AA76DD /* DottedLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DottedLineViewController.m; sourceTree = "<group>"; };
+		5B5892BD225D977800AA76DD /* yuanxing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yuanxing.png; sourceTree = "<group>"; };
+		5B5892C7225D991000AA76DD /* changtiao-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "changtiao-4.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +127,10 @@
 				5B04D4AB225B22E00052EDA0 /* RectController.m */,
 				5B04D4AD225B2DEC0052EDA0 /* BrokenLineController.h */,
 				5B04D4AE225B2DEC0052EDA0 /* BrokenLineController.m */,
+				5B5892B2225D8AEF00AA76DD /* DottedLineViewController.h */,
+				5B5892B3225D8AEF00AA76DD /* DottedLineViewController.m */,
+				5B5892BD225D977800AA76DD /* yuanxing.png */,
+				5B5892C7225D991000AA76DD /* changtiao-4.png */,
 				5B04D47B225AF28D0052EDA0 /* Main.storyboard */,
 				5B04D47E225AF28F0052EDA0 /* Assets.xcassets */,
 				5B04D480225AF28F0052EDA0 /* LaunchScreen.storyboard */,
@@ -250,8 +261,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5892BE225D977800AA76DD /* yuanxing.png in Resources */,
 				5B04D482225AF28F0052EDA0 /* LaunchScreen.storyboard in Resources */,
 				5B04D47F225AF28F0052EDA0 /* Assets.xcassets in Resources */,
+				5B5892C8225D991000AA76DD /* changtiao-4.png in Resources */,
 				5B04D47D225AF28D0052EDA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B04D4AF225B2DEC0052EDA0 /* BrokenLineController.m in Sources */,
+				5B5892B4225D8AEF00AA76DD /* DottedLineViewController.m in Sources */,
 				5B04D47A225AF28D0052EDA0 /* ViewController.m in Sources */,
 				5B04D4AC225B22E00052EDA0 /* RectController.m in Sources */,
 				5B04D4A9225AF3660052EDA0 /* RoundProgressController.m in Sources */,
@@ -456,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M45J7VXHD;
 				INFOPLIST_FILE = XCCAShaperLayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M45J7VXHD;
 				INFOPLIST_FILE = XCCAShaperLayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,6 +10,7 @@
 #import "RoundProgressController.h"
 #import "RectController.h"
 #import "BrokenLineController.h"
+#import "DottedLineViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -22,7 +23,7 @@
 
 - (NSMutableArray *)itemArr {
     if (!_itemArr) {
-        _itemArr = @[@"圆形进度条",@"矩形",@"折线"].mutableCopy;
+        _itemArr = @[@"圆形进度条",@"矩形",@"折线",@"虚线"].mutableCopy;
     }
     return _itemArr;
 }
@@ -68,13 +69,16 @@
     if ([self.itemArr[indexPath.row] isEqualToString:@"圆形进度条"]) {
         RoundProgressController *vc = [[RoundProgressController alloc] init];
         vc.view.frame = self.view.bounds;
-        [self presentViewController:vc animated:YES completion:nil];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if ([self.itemArr[indexPath.row] isEqualToString:@"矩形"]){
         RectController *vc = [RectController new];
-        [self presentViewController:vc animated:YES completion:nil];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if ([self.itemArr[indexPath.row] isEqualToString:@"折线"]){
         BrokenLineController *vc = [BrokenLineController new];
-        [self presentViewController:vc animated:YES completion:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([self.itemArr[indexPath.row] isEqualToString:@"虚线"]){
+        DottedLineViewController *vc = [DottedLineViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

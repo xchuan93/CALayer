@@ -28,6 +28,8 @@
         _trackLayer.fillColor = nil;
         _trackLayer.strokeColor = [UIColor grayColor].CGColor;
         _trackLayer.lineWidth = 2.0f;
+        _trackLayer.fillRule = kCAFillRuleEvenOdd;
+        _trackLayer.lineJoin = kCALineJoinBevel;
         _trackLayer.frame = CGRectMake(0, 0, 150, 150);
         _trackLayer.path = trackPath.CGPath;
     }
@@ -62,7 +64,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view.layer addSublayer:self.trackLayer];
     _timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(displaytime)];
     [_timer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];

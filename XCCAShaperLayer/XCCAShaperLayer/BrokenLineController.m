@@ -26,6 +26,7 @@
         _lineLayer = [CAShapeLayer layer];
         _lineLayer.lineWidth = 1.0f;
         _lineLayer.fillColor = nil;
+        _lineLayer.lineJoin = kCALineJoinRound;
         _lineLayer.strokeColor = [UIColor orangeColor].CGColor;
         [self.view.layer addSublayer:_lineLayer];
     }
@@ -35,9 +36,11 @@
 - (CAShapeLayer *)midLineLayer {
     if (!_midLineLayer) {
         _midLineLayer = [CAShapeLayer layer];
-        _midLineLayer.lineWidth = 1.0f;
+        _midLineLayer.lineWidth = 3.0f;
         _midLineLayer.fillColor = nil;
         _midLineLayer.strokeColor = [UIColor redColor].CGColor;
+        _midLineLayer.lineJoin = kCALineJoinMiter;
+        _midLineLayer.miterLimit = 5;
         [self.view.layer addSublayer:_midLineLayer];
     }
     return _midLineLayer;
@@ -61,7 +64,7 @@
     
     UIBezierPath *midPath = [UIBezierPath bezierPath];
     [midPath moveToPoint:CGPointMake(20, Height )];
-    [midPath addLineToPoint:CGPointMake(self.view.bounds.size.width , Height)];
+    [midPath addLineToPoint:CGPointMake(self.view.bounds.size.width - 20 , Height)];
     self.midLineLayer.path = midPath.CGPath;
 }
 
