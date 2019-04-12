@@ -69,8 +69,8 @@
 }
 
 - (void)setEmitterCell {
-    CAEmitterCell *rainflake = [CAEmitterCell  emitterCell];
-    rainflake.birthRate = 5.f;
+    CAEmitterCell *rainflake  = [CAEmitterCell  emitterCell];
+    rainflake.birthRate       = 5.f;
     rainflake.speed = 10.f;
     rainflake.velocity        = 10.f;
     rainflake.velocityRange   = 10.f;
